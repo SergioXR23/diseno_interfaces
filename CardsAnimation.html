@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tarjetas</title>
+     
+
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          }  
+          body{
+               min-height: 100vh;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+          }
+
+          .contenedor{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 10px;
+               flex-wrap: wrap;
+          }
+
+          .contenedor .tarjeta{
+               width: 240px;
+               height: 320px;
+               border-radius: 20px;
+               /* overflow: hidden; */
+               position: relative;
+               overflow: hidden;
+          }
+
+          .tarjeta:hover .cuerpo{
+               bottom: 0;
+
+          }
+          .contenedor .tarjeta .img{
+               width: 100%;
+               height: 100%; 
+         }
+         .img img{
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               object-position: center;
+         }
+         .cuerpo{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+
+          }
+          .cuerpo h3{
+               font-size: 28px;
+               color: royalblue;
+               letter-spacing: 2px;
+          }
+
+          .cuerpo span{
+               font-size: 18px;
+               color: coral;
+               display: block;
+               text-align: center;
+          }
+
+          .cuerpo {
+               position: absolute;
+               bottom: -120px;
+               left: 0;
+               width: 100%;
+               height: 120px;
+               backdrop-filter: blur(10px);
+               transition: all .7s;
+
+          }
+     </style>
+
+
+</head>
+<body>
+     <div class="contenedor">
+          <div class="tarjeta">
+               <div class="img">
+                    <img src="img/image1.jpg" alt="">
+               </div>
+
+               <div class="cuerpo">
+                    <div class="texto">
+                         <h3>Juanita</h3>
+                         <span>Modelo</span>
+                    </div>
+               
+                    
+               </div>
+          </div>
+
+          <div class="tarjeta">
+               <div class="img">
+                    <img src="img/image2.jpg" alt="">
+               </div>
+
+               <div class="cuerpo">
+                    <div class="texto">
+                         <h3>Jorge</h3>
+                         <span>Fotógrafo</span>
+                    </div>
+               
+                    
+               </div>
+          </div>
+
+          <div class="tarjeta">
+               <div class="img">
+                    <img src="img/image3.jpg" alt="">
+               </div>
+
+               <div class="cuerpo">
+                    <div class="texto">
+                         <h3>Luisa</h3>
+                         <span>Escritora</span>
+                    </div>
+               
+                    
+               </div>
+          </div>
+     </div>
+</body>
+</html>
